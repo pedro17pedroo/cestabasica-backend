@@ -1,9 +1,9 @@
 const config = {
     dbUrl: process.env.DB_URL,
-    port: process.env.PORT,
-    host: process.env.HOST,
-    publicRoute: process.env.PUBLIC_ROUTER,
-    filesRoute:process.env.FILES_ROUTE
+    port: process.env.PORT || 3000,
+    host: process.env.HOST || 'http://localhost',
+    publicRoute: process.env.PUBLIC_ROUTER || '/app',
+    filesRoute:process.env.FILES_ROUTE || 'files'
 
 }
 
