@@ -7,9 +7,10 @@ const controller = require('./controller');
 const router = express.Router();
 
 const upload = multer({
-    dest: 'public/'+ config.filesRoute +'/'
+    dest: '/public/files/categoria'
 })
-router.post('/addCategoria',upload.single('file'), function(req, res) {
+router.post('/addCategoria',upload.single('CategoryImage'), function(req, res) {
+    console.log(req.file)
     controller.addCategory(req.body.name, req.body.description, req.file)
         .then((category) => {
             response.success(req, res, category, 200);
