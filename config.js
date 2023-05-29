@@ -8,5 +8,4 @@ const config = {
 
 module.exports = config; 
 
-//'mongodb://localhost/dbcba'
-//mongodb+srv://joseticnes_user:v51BdAz0BatlU7xR@cluster0.rjqps.mongodb.net/cbaDataBase?retryWrites=true&w=majority
+
